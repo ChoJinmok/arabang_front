@@ -1,3 +1,5 @@
+import '../styles/tailwind.css';
+
 import { Global } from '@emotion/react';
 
 import type { AppProps } from 'next/app';
