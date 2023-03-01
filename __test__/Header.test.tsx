@@ -4,8 +4,9 @@ import Header from '@/components/Header';
 
 describe('Header', () => {
   it('renders kakao login button', () => {
-    const { container } = render(<Header />);
+    const { queryByText, queryByTestId } = render(<Header />);
 
-    expect(container).toHaveTextContent('카카오 로그인');
+    expect(queryByText('카카오 로그인')).not.toBeNull();
+    expect(queryByTestId('comment-icon')).not.toBeNull();
   });
 });
