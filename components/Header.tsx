@@ -1,24 +1,50 @@
-import { useEffect } from 'react';
+import { useEffect, useCallback } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComment } from '@fortawesome/free-solid-svg-icons';
 
 import { postKakaoToken } from '@/services/api';
+import { saveItem } from '@/services/storage';
 
-export default function Header() {
+import type { TokenData } from '@/pages/_app';
+
+interface HeaderProps {
+  accessToken: string;
+  refreshToken: string;
+  setTokenData: (tokenData: TokenData) => void
+}
+
+export default function Header({ accessToken, refreshToken, setTokenData }: HeaderProps) {
+  const authorizeWithKakao = useCallback(async (authorizeCode: string) => {
+    try {
+      const user = await postKakaoToken(authorizeCode);
+      saveItem('accessToken', user.accessToken);
+      saveItem('refreshToken', user.refreshToken);
+      setTokenData({ accessToken: user.accessToken, refreshToken: user.refreshToken });
+    } catch (error) {
+      console.error(error);
+      // handle the error, e.g. show an error message to the user
+    }
+  }, [setTokenData]);
+
   useEffect(() => {
-    if (!window.location.search) return;
+    const { search } = window.location;
 
-    const PARAMS = new URL(document.URL).searchParams;
-    const AUTHORIZE_CODE = PARAMS.get('code');
+    if (!search) return;
 
-    if (!AUTHORIZE_CODE) return;
-    postKakaoToken(AUTHORIZE_CODE);
-  }, []);
+    const params = new URLSearchParams(search);
+    const authorizeCode = params.get('code');
+
+    if (!authorizeCode) return;
+
+    authorizeWithKakao(authorizeCode);
+  }, [authorizeWithKakao]);
 
   function receiveKakaoAuthorizationCode() {
     const url = `${process.env.NEXT_PUBLIC_KAKAO_HOST
-    }/oauth/authorize?client_id=${process.env.NEXT_PUBLIC_REST_API_KEY}&redirect_uri=${process.env.NEXT_PUBLIC_REDIRECT_URI}&response_type=code`;
+    }/oauth/authorize?client_id=${process.env.NEXT_PUBLIC_REST_API_KEY
+    }&redirect_uri=${process.env.NEXT_PUBLIC_REDIRECT_URI
+    }&response_type=code`;
 
     window.location.href = url;
   }
