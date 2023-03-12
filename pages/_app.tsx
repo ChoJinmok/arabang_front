@@ -8,7 +8,7 @@ import type { AppProps } from 'next/app';
 
 import Layout from '@/components/Layout';
 
-import { loadItem } from '@/services/storage';
+import { loadItem, saveItem } from '@/services/storage';
 import { postToken } from '@/services/api';
 
 import globals from '../styles/globals';
@@ -21,6 +21,8 @@ export interface TokenData {
 type TokenName = 'accessToken' | 'refreshToken';
 
 export default function App({ Component, pageProps }: AppProps) {
+  const { pathname } = pageProps;
+
   const [state, setState] = useState({
     accessToken: '',
     refreshToken: '',
@@ -47,6 +49,9 @@ export default function App({ Component, pageProps }: AppProps) {
 
     setTokenData({ accessToken, refreshToken });
 
+    saveItem('accessToken', accessToken);
+    saveItem('refreshToken', refreshToken);
+
     return true;
   }, [setTokenData]);
 
@@ -64,8 +69,17 @@ export default function App({ Component, pageProps }: AppProps) {
 
   const { accessToken, refreshToken } = state;
 
+  if (pathname === '/oauth/kakao') {
+    return (
+      <>
+        <Global styles={globals} />
+        <Component {...pageProps} setTokenData={setTokenData} />
+      </>
+    );
+  }
+
   return (
-    <Layout accessToken={accessToken} refreshToken={refreshToken} setTokenData={setTokenData}>
+    <Layout accessToken={accessToken} refreshToken={refreshToken}>
       <Global styles={globals} />
       <Component {...pageProps} />
     </Layout>
