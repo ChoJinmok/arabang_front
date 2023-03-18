@@ -11,7 +11,12 @@ import Layout from '@/components/Layout';
 import { loadItem, saveItem } from '@/services/storage';
 import { postToken } from '@/services/api';
 
+import { config } from '@fortawesome/fontawesome-svg-core';
 import globals from '../styles/globals';
+
+import '@fortawesome/fontawesome-svg-core/styles.css';
+
+config.autoAddCss = false;
 
 export interface TokenData {
   accessToken: string;
