@@ -8,7 +8,10 @@ async function fetchKakaoToken(authorizeCode: string) {
     },
     body: `grant_type=authorization_code&client_id=${process.env.NEXT_PUBLIC_REST_API_KEY}&redirect_uri=${process.env.NEXT_PUBLIC_REDIRECT_URI}&code=${authorizeCode}`,
   });
-  const { access_token: accessToken, refresh_token: refreshToken } = await response.json();
+  const {
+    access_token: accessToken,
+    refresh_token: refreshToken,
+  } = await response.json();
 
   return {
     accessToken,
