@@ -1,6 +1,8 @@
 import { useEffect, useCallback } from 'react';
 
-import { NextPageContext } from 'next';
+import { useRouter } from 'next/router';
+
+import type { NextPageContext } from 'next';
 
 import { postKakaoToken } from '@/services/api';
 import { saveItem } from '@/services/storage';
@@ -12,6 +14,8 @@ interface KakaoProps {
 }
 
 function Kakao({ setTokenData }: KakaoProps) {
+  const router = useRouter();
+
   const authorizeWithKakao = useCallback(async (authorizeCode: string) => {
     try {
       const user = await postKakaoToken(authorizeCode);
@@ -22,8 +26,10 @@ function Kakao({ setTokenData }: KakaoProps) {
       saveItem('refreshToken', user.refreshToken);
     } catch (error) {
       // handle the error, e.g. show an error message to the user
+    } finally {
+      router.back();
     }
-  }, [setTokenData]);
+  }, [setTokenData, router]);
 
   useEffect(() => {
     const { search } = window.location;
@@ -37,6 +43,7 @@ function Kakao({ setTokenData }: KakaoProps) {
 
     authorizeWithKakao(authorizeCode);
   }, [authorizeWithKakao]);
+
   return (
     <h1>로그인 중</h1>
   );

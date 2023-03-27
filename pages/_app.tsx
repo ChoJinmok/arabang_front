@@ -41,36 +41,36 @@ export default function App({ Component, pageProps }: AppProps) {
     }));
   }, [setState]);
 
-  const updateTokens = useCallback(async (tokenName: TokenName) => {
-    const token = loadItem(tokenName);
+  // const updateTokens = useCallback(async (tokenName: TokenName) => {
+  //   const token = loadItem(tokenName);
 
-    if (!token) return false;
+  //   if (!token) return false;
 
-    const user = await postToken({ tokenName, token });
+  //   const user = await postToken({ tokenName, token });
 
-    if (!user) return false;
+  //   if (!user) return false;
 
-    const { accessToken, refreshToken } = user;
+  //   const { accessToken, refreshToken } = user;
 
-    setTokenData({ accessToken, refreshToken });
+  //   setTokenData({ accessToken, refreshToken });
 
-    saveItem('accessToken', accessToken);
-    saveItem('refreshToken', refreshToken);
+  //   saveItem('accessToken', accessToken);
+  //   saveItem('refreshToken', refreshToken);
 
-    return true;
-  }, [setTokenData]);
+  //   return true;
+  // }, [setTokenData]);
 
-  useEffect(() => {
-    const checkAndUpdateTokens = async () => {
-      const isValidAccessToken = await updateTokens('accessToken');
+  // useEffect(() => {
+  //   const checkAndUpdateTokens = async () => {
+  //     const isValidAccessToken = await updateTokens('accessToken');
 
-      if (isValidAccessToken) return;
+  //     if (isValidAccessToken) return;
 
-      updateTokens('refreshToken');
-    };
+  //     updateTokens('refreshToken');
+  //   };
 
-    checkAndUpdateTokens();
-  }, [updateTokens]);
+  //   checkAndUpdateTokens();
+  // }, [updateTokens]);
 
   const { accessToken, refreshToken } = state;
 

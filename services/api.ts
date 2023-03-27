@@ -21,24 +21,23 @@ async function fetchKakaoToken(authorizeCode: string) {
 
 export async function postKakaoToken(authorizeCode: string) {
   const { accessToken, refreshToken } = await fetchKakaoToken(authorizeCode);
-  const url = '';
+  const url = `${process.env.NEXT_PUBLIC_API_HOST}/users`;
 
   const response = await fetch(url, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ accessToken, refreshToken }),
+    body: JSON.stringify({ type: 'kakao', accessToken, refreshToken }),
   });
 
   const user = await response.json();
-
-  console.log(user);
 
   return user;
 }
 
 export async function postToken({ tokenName, token }: { tokenName: string, token: string }) {
+  // const url = `${process.env.NEXT_PUBLIC_API_HOST}/users`;
   const url = '';
 
   const response = await fetch(url, {
