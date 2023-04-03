@@ -27,6 +27,8 @@ yarn-error.log*
 
 # local env files
 .env*.local
+.env
+.env.development
 
 # vercel
 .vercel
@@ -38,6 +40,10 @@ next-env.d.ts
 /playwright-report/
 /playwright/.cache/
 
+<<<<<<< HEAD
 # evironmetn variouble
 .env
 .env.*
+=======
+/.vscode
+>>>>>>> main
