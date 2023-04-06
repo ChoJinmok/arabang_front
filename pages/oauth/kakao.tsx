@@ -1,6 +1,8 @@
 import { useEffect, useCallback } from 'react';
 
-import { NextPageContext } from 'next';
+import { useRouter } from 'next/router';
+
+import type { NextPageContext } from 'next';
 
 import { postKakaoToken } from '@/services/api';
 import { saveItem } from '@/services/storage';
@@ -12,6 +14,8 @@ interface KakaoProps {
 }
 
 function Kakao({ setTokenData }: KakaoProps) {
+  const router = useRouter();
+
   const authorizeWithKakao = useCallback(async (authorizeCode: string) => {
     try {
       const user = await postKakaoToken(authorizeCode);
@@ -20,10 +24,12 @@ function Kakao({ setTokenData }: KakaoProps) {
 
       saveItem('accessToken', user.accessToken);
       saveItem('refreshToken', user.refreshToken);
+
+      router.push('/');
     } catch (error) {
       // handle the error, e.g. show an error message to the user
     }
-  }, [setTokenData]);
+  }, [setTokenData, router]);
 
   useEffect(() => {
     const { search } = window.location;
