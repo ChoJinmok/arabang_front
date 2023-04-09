@@ -31,6 +31,20 @@ export default function Home() {
     };
   }
 
+  useEffect(() => {
+    async function getSitesByKeyword() {
+      const url = `${process.env.NEXT_PUBLIC_API_HOST}/keywords`;
+
+      const response = await fetch(url);
+
+      const data = await response.json();
+
+      console.log(data);
+    }
+
+    getSitesByKeyword();
+  }, []);
+
   return (
     <div className="flex w-full justify-center">
       <Categories className="flex">
