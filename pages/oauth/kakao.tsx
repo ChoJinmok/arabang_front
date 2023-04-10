@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import type { NextPageContext } from 'next';
 
 import { postKakaoToken } from '@/services/api';
-import { saveItem } from '@/services/storage';
+import { saveItem } from '@/services/storageUtils.ts';
 
 import type { TokenData } from '@/pages/_app';
 

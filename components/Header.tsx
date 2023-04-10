@@ -2,11 +2,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComment } from '@fortawesome/free-solid-svg-icons';
 
 interface HeaderProps {
-  accessToken: string;
   refreshToken: string;
 }
 
-export default function Header({ accessToken, refreshToken }: HeaderProps) {
+export default function Header({ refreshToken }: HeaderProps) {
   function receiveKakaoAuthorizationCode() {
     const url = `${process.env.NEXT_PUBLIC_KAKAO_HOST
     }/oauth/authorize?client_id=${process.env.NEXT_PUBLIC_REST_API_KEY

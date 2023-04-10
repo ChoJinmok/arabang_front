@@ -8,7 +8,7 @@ import type { AppProps } from 'next/app';
 
 import Layout from '@/components/Layout';
 
-import { loadItem, saveItem } from '@/services/storage';
+import { getLocalStorageItem, setLocalStorageItem } from '@/services/storageUtils';
 import { postToken } from '@/services/api';
 
 import { config } from '@fortawesome/fontawesome-svg-core';
@@ -42,7 +42,7 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [setState]);
 
   const updateTokens = useCallback(async (tokenName: TokenName) => {
-    const token = loadItem(tokenName);
+    const token = getLocalStorageItem(tokenName);
 
     if (!token) return false;
 
@@ -54,8 +54,8 @@ export default function App({ Component, pageProps }: AppProps) {
 
     setTokenData({ accessToken, refreshToken });
 
-    saveItem('accessToken', accessToken);
-    saveItem('refreshToken', refreshToken);
+    setLocalStorageItem('accessToken', accessToken);
+    setLocalStorageItem('refreshToken', refreshToken);
 
     return true;
   }, [setTokenData]);
@@ -72,7 +72,7 @@ export default function App({ Component, pageProps }: AppProps) {
     checkAndUpdateTokens();
   }, [updateTokens]);
 
-  const { accessToken, refreshToken } = state;
+  const { refreshToken } = state;
 
   if (pathname === '/oauth/kakao') {
     return (
@@ -84,7 +84,7 @@ export default function App({ Component, pageProps }: AppProps) {
   }
 
   return (
-    <Layout accessToken={accessToken} refreshToken={refreshToken}>
+    <Layout refreshToken={refreshToken}>
       <Global styles={globals} />
       <Component {...pageProps} />
     </Layout>
