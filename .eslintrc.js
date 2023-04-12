@@ -80,6 +80,7 @@ module.exports = {
           '**/*.config.ts',
           '**/*.setup.js',
           '**/*.spec.ts',
+          '**/*.test.tsx',
         ],
       },
     ],
