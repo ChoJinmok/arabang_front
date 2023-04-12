@@ -19,6 +19,7 @@ async function fetchKakaoToken(authorizeCode: string) {
   };
 }
 
+// eslint-disable-next-line import/prefer-default-export
 export async function postKakaoToken(authorizeCode: string) {
   const { accessToken, refreshToken } = await fetchKakaoToken(authorizeCode);
   const url = `${process.env.NEXT_PUBLIC_API_HOST}/users`;
@@ -32,24 +33,6 @@ export async function postKakaoToken(authorizeCode: string) {
   });
 
   const user = await response.json();
-
-  return user;
-}
-
-export async function postToken({ tokenName, token }: { tokenName: string, token: string }) {
-  const url = '';
-
-  const response = await fetch(url, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ [tokenName]: token }),
-  });
-
-  const user = await response.json();
-
-  console.log(user);
 
   return user;
 }

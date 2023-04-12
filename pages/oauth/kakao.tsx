@@ -5,31 +5,32 @@ import { useRouter } from 'next/router';
 import type { NextPageContext } from 'next';
 
 import { postKakaoToken } from '@/services/api';
-import { saveItem } from '@/services/storageUtils.ts';
-
-import type { TokenData } from '@/pages/_app';
+import { setLocalStorageItem, setCookie } from '@/services/storageUtils';
 
 interface KakaoProps {
-  setTokenData: (tokenData: TokenData) => void
+  setAccessToken: (accessToken: string) => void
 }
 
-function Kakao({ setTokenData }: KakaoProps) {
+function Kakao({ setAccessToken }: KakaoProps) {
   const router = useRouter();
 
   const authorizeWithKakao = useCallback(async (authorizeCode: string) => {
     try {
-      const user = await postKakaoToken(authorizeCode);
+      const {
+        accessToken,
+        refreshToken,
+        expirationTime,
+      } = await postKakaoToken(authorizeCode);
 
-      setTokenData({ accessToken: user.accessToken, refreshToken: user.refreshToken });
-
-      saveItem('accessToken', user.accessToken);
-      saveItem('refreshToken', user.refreshToken);
-
-      router.push('/');
+      setAccessToken(accessToken);
+      setCookie({ key: 'accessToken', value: accessToken, expirationTime });
+      setLocalStorageItem('refreshToken', refreshToken);
     } catch (error) {
       // handle the error, e.g. show an error message to the user
+    } finally {
+      router.push('/');
     }
-  }, [setTokenData, router]);
+  }, [setAccessToken, router]);
 
   useEffect(() => {
     const { search } = window.location;

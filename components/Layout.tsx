@@ -4,15 +4,15 @@ import Header from './Header';
 
 interface LayoutProps {
   children: ReactNode;
-  refreshToken: string;
+  accessToken: string;
 }
 
 export default function Layout({
-  children, refreshToken,
+  children, accessToken,
 }: LayoutProps) {
   return (
     <>
-      <Header refreshToken={refreshToken} />
+      <Header accessToken={accessToken} />
       <main>
         {children}
       </main>
