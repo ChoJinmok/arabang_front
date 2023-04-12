@@ -44,6 +44,7 @@ function Kakao({ setAccessToken }: KakaoProps) {
 
     authorizeWithKakao(authorizeCode);
   }, [authorizeWithKakao]);
+
   return (
     <h1>로그인 중</h1>
   );
