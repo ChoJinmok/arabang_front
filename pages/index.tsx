@@ -20,26 +20,25 @@ export default function Home() {
 
   function handleBusinessCategoryClick(category: Category) {
     return async () => {
-      // router.push(`/categories/${category}`);
-      const url = `${process.env.NEXT_PUBLIC_API_HOST}/categories/${category}`;
+      const categoryUrl = `/categories/${category}`;
 
+      router.push(categoryUrl);
+
+      const url = `${process.env.NEXT_PUBLIC_API_HOST}${categoryUrl}`;
       const response = await fetch(url);
-
       const data = await response.json();
 
-      console.log(data);
+      return data;
     };
   }
 
   useEffect(() => {
     async function getSitesByKeyword() {
       const url = `${process.env.NEXT_PUBLIC_API_HOST}/keywords`;
-
       const response = await fetch(url);
-
       const data = await response.json();
 
-      console.log(data);
+      return data;
     }
 
     getSitesByKeyword();
