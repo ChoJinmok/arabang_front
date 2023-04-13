@@ -25,9 +25,11 @@ export default function Header({ accessToken }: HeaderProps) {
         <h1 className="text-right text-5xl font-semibold">Arabang</h1>
       </div>
       <div>
-        <button type="button" onClick={handleKakaoLoginClick}>
-          <Image src="/images/kakao_login_medium_narrow.png" alt="kakao-login" width={130} height={50} />
-        </button>
+        {!accessToken && (
+          <button type="button" onClick={handleKakaoLoginClick}>
+            <Image src="/images/kakao_login_medium_narrow.png" alt="kakao-login" width={130} height={50} />
+          </button>
+        )}
       </div>
     </header>
   );
