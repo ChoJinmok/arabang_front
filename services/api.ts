@@ -19,7 +19,12 @@ async function fetchKakaoToken(authorizeCode: string) {
   };
 }
 
-// eslint-disable-next-line import/prefer-default-export
+async function fetchData(url: string) {
+  const response = await fetch(url);
+  const data = await response.json();
+  return data;
+}
+
 export async function postKakaoToken(authorizeCode: string) {
   const { accessToken, refreshToken } = await fetchKakaoToken(authorizeCode);
   const url = `${process.env.NEXT_PUBLIC_API_HOST}/users`;
@@ -35,4 +40,16 @@ export async function postKakaoToken(authorizeCode: string) {
   const user = await response.json();
 
   return user;
+}
+
+export async function getSitesByKeyword() {
+  const url = `${process.env.NEXT_PUBLIC_API_HOST}/keywords`;
+  const sitesByKeyword = await fetchData(url);
+  return sitesByKeyword;
+}
+
+export async function getSitesByCategory(category: string) {
+  const url = `${process.env.NEXT_PUBLIC_API_HOST}/categories/${category}`;
+  const sites = fetchData(url);
+  return sites;
 }

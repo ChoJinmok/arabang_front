@@ -4,20 +4,14 @@ import { useRouter } from 'next/router';
 
 import CategoriesList from '@/components/CategoriesList';
 
+import { getSitesByCategory } from '@/services/api';
+
 export default function Categories() {
   const router = useRouter();
   const { category } = router.query;
 
   useEffect(() => {
-    async function getSitesByCategory() {
-      const url = `${process.env.NEXT_PUBLIC_API_HOST}/categories/${category}`;
-      const response = await fetch(url);
-      const data = await response.json();
-
-      return data;
-    }
-
-    // getSitesByCategory();
+    // getSitesByCategory(category);
   }, [category]);
 
   return (
