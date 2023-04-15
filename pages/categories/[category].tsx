@@ -17,7 +17,6 @@ export default function Categories() {
   return (
     <div className="flex w-full justify-center">
       <CategoriesList />
-      <h1>ca</h1>
     </div>
   );
 }
