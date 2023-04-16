@@ -6,9 +6,10 @@ import CategoriesList from '@/components/CategoriesList';
 
 import { getSitesByCategory } from '@/services/api';
 
-export default function Categories() {
+export default function Category() {
   const router = useRouter();
   const { category } = router.query;
+  const currentCategory = typeof category === 'string' ? category : '';
 
   useEffect(() => {
     // getSitesByCategory(category);
@@ -16,7 +17,7 @@ export default function Categories() {
 
   return (
     <div className="flex w-full justify-center">
-      <CategoriesList />
+      <CategoriesList currentCategory={currentCategory} />
     </div>
   );
 }
