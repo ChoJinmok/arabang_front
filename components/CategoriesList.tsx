@@ -7,9 +7,9 @@ import businessCategories from '@/fixtures/businessCategories';
 import type { Category } from '@/fixtures/businessCategories';
 
 const Categories = styled.ul({
-  '& li:not(:last-of-type)': {
-    marginRight: '50px',
-  },
+  display: 'flex',
+  justifyContent: 'space-evenly',
+  width: '100vw',
 });
 
 interface ButtonProps {
@@ -17,13 +17,13 @@ interface ButtonProps {
 }
 
 const Button = styled.button(({ isActive }: ButtonProps) => ({
-  transition: 'opacity ease-in-out 0.2s',
+  transition: 'all ease-in-out 0.2s',
   ...(isActive && {
     color: 'rgb(14 165 233)',
     fontWeight: 'bold',
   }),
   '&:hover': {
-    opacity: isActive ? 1 : 0.7,
+    color: 'rgb(14 165 233)',
   },
   '&::after': {
     content: 'attr(title)',
@@ -35,7 +35,7 @@ const Button = styled.button(({ isActive }: ButtonProps) => ({
 }));
 
 interface CategoriesListProps {
-  currentCategory: string;
+  currentCategory?: string;
 }
 
 export default function CategoriesList({ currentCategory }: CategoriesListProps) {
@@ -48,12 +48,12 @@ export default function CategoriesList({ currentCategory }: CategoriesListProps)
   }
 
   return (
-    <Categories className="flex">
+    <Categories className="max-w-7xl">
       {businessCategories.map(({ id, name, category }) => (
         <li key={id}>
           <Button
             title={name}
-            className="cursor text-lg"
+            className="cursor text-xl"
             onClick={handleBusinessCategoryClick(category)}
             type="button"
             isActive={category === currentCategory}
@@ -65,3 +65,7 @@ export default function CategoriesList({ currentCategory }: CategoriesListProps)
     </Categories>
   );
 }
+
+CategoriesList.defaultProps = {
+  currentCategory: '',
+};
