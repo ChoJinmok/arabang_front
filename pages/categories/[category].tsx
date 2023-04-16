@@ -12,8 +12,8 @@ export default function Category() {
   const currentCategory = typeof category === 'string' ? category : '';
 
   useEffect(() => {
-    // getSitesByCategory(category);
-  }, [category]);
+    getSitesByCategory(currentCategory);
+  }, [currentCategory]);
 
   return (
     <div className="flex w-full justify-center">

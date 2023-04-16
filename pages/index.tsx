@@ -6,7 +6,7 @@ import { getSitesByKeyword } from '@/services/api';
 
 export default function Home() {
   useEffect(() => {
-    // getSitesByKeyword();
+    getSitesByKeyword();
   }, []);
 
   return (

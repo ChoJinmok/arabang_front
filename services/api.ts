@@ -50,6 +50,6 @@ export async function getSitesByKeyword() {
 
 export async function getSitesByCategory(category: string) {
   const url = `${process.env.NEXT_PUBLIC_API_HOST}/categories/${category}`;
-  const sites = fetchData(url);
+  const sites = await fetchData(url);
   return sites;
 }
