@@ -1,5 +1,7 @@
 import { useEffect, useCallback } from 'react';
 
+import styled from '@emotion/styled';
+
 import { useAppStore } from '@/store/reducers';
 
 import CategoriesList from '@/components/CategoriesList';
@@ -8,6 +10,10 @@ import SitesByKeyword from '@/components/SitesByKeyword';
 import { updateSitesByKeyword } from '@/store/actions';
 
 import { getSitesByKeyword } from '@/services/api';
+
+const Container = styled.div({
+  maxWidth: '1194px',
+});
 
 export default function Home() {
   const [state, dispatch] = useAppStore();
@@ -43,9 +49,9 @@ export default function Home() {
   }, [fetchSitesByKeyword]);
 
   return (
-    <div className="m-auto">
+    <Container className="m-auto">
       <CategoriesList />
       <SitesByKeyword sites={sitesByKeyword} />
-    </div>
+    </Container>
   );
 }

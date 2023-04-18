@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.heading-6 {
+    @apply font-semibold text-lg leading-[27px]
+}
+
+.paragraph-16 {
+    @apply leading-6
+}
