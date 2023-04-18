@@ -42,7 +42,32 @@ export async function postKakaoToken(authorizeCode: string) {
   return user;
 }
 
-export async function getSitesByKeyword() {
+interface Information {
+  _id: number;
+  link: string;
+  name: string;
+  price: string;
+  thumbnail: string;
+}
+
+interface Category {
+  _id: number;
+  title: string;
+}
+
+interface Site {
+  _id: number;
+  category: Category;
+  site: Information
+}
+
+interface SiteCategoryKeyword {
+  _id: number;
+  keyword: string;
+  siteCategoryKeyword: Site[];
+}
+
+export async function getSitesByKeyword(): Promise<SiteCategoryKeyword[]> {
   const url = `${process.env.NEXT_PUBLIC_API_HOST}/keywords`;
   const sitesByKeyword = await fetchData(url);
   return sitesByKeyword;
