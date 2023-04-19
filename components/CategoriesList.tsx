@@ -9,7 +9,7 @@ import type { Category } from '@/fixtures/businessCategories';
 const Categories = styled.ul({
   display: 'flex',
   justifyContent: 'space-evenly',
-  width: '100vw',
+  width: '100%',
 });
 
 interface ButtonProps {
@@ -48,7 +48,7 @@ export default function CategoriesList({ currentCategory }: CategoriesListProps)
   }
 
   return (
-    <Categories className="max-w-7xl">
+    <Categories>
       {businessCategories.map(({ id, name, category }) => (
         <li key={id}>
           <Button
