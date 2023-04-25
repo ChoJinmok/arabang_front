@@ -1,6 +1,6 @@
 export interface Site {
   id: number;
-  category: string;
+  category?: string;
   link: string;
   name: string;
   price: string;

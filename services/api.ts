@@ -73,7 +73,18 @@ export async function getSitesByKeyword(): Promise<SiteCategoryKeyword[]> {
   return sitesByKeyword;
 }
 
-export async function getSitesByCategory(category: string) {
+interface SiteCategoryKeyword {
+  _id: number;
+  site: Information;
+}
+
+interface SitesByCategory {
+  _id: number;
+  title: string;
+  siteCategoryKeyword: SiteCategoryKeyword[];
+}
+
+export async function getSitesByCategory(category: string): Promise<SitesByCategory> {
   const url = `${process.env.NEXT_PUBLIC_API_HOST}/categories/${category}`;
   const sites = await fetchData(url);
   return sites;

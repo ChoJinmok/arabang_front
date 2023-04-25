@@ -31,7 +31,7 @@ export default function Site({
         <h3 className="paragraph-16">{name}</h3>
       </a>
       <SubInformation className="text-neutral-600 text-xs mt-1.5">
-        <span>{category}</span>
+        {category && <span>{category}</span>}
         <span>{price}</span>
       </SubInformation>
     </li>
