@@ -5,9 +5,9 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'scontent-gmp1-1.cdninstagram.com',
+        hostname: 'images.unsplash.com',
         port: '',
-        pathname: '/v/**',
+        pathname: '/**',
       },
     ],
   },

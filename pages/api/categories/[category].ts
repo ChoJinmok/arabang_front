@@ -14,7 +14,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
           link: 'https://instagram.com/943_snap?igshid=YmMyMTA2M2Y=',
           name: '943스냅',
           price: '0.00',
-          thumbnail: 'https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/341139704_730615408806590_5394512627668967682_n.jpg?stp=dst-jpg_e35_p1080x1080&_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=maajJoQTJYwAX9w5D_z&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=MzA4MDYzNDE3MzE4NjcxMTQ5MA%3D%3D.2-ccb7-5&oh=00_AfAAebRhSbJam7fNsjUCKFA_6Qq81OFY1Fbp2wJdyLXvXQ&oe=644063C7&_nc_sid=1527a3',
+          thumbnail: 'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
         },
       }, {
         _id: 5,
@@ -23,7 +23,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
           link: 'https://instagram.com/943_snap?igshid=YmMyMTA2M2Y=',
           name: '943스냅',
           price: '0.00',
-          thumbnail: 'https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/341139704_730615408806590_5394512627668967682_n.jpg?stp=dst-jpg_e35_p1080x1080&_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=maajJoQTJYwAX9w5D_z&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=MzA4MDYzNDE3MzE4NjcxMTQ5MA%3D%3D.2-ccb7-5&oh=00_AfAAebRhSbJam7fNsjUCKFA_6Qq81OFY1Fbp2wJdyLXvXQ&oe=644063C7&_nc_sid=1527a3',
+          thumbnail: 'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
         },
       }, {
         _id: 11,
@@ -32,7 +32,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
           link: 'https://instagram.com/943_snap?igshid=YmMyMTA2M2Y=',
           name: '943스냅',
           price: '0.00',
-          thumbnail: 'https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/341139704_730615408806590_5394512627668967682_n.jpg?stp=dst-jpg_e35_p1080x1080&_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=maajJoQTJYwAX9w5D_z&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=MzA4MDYzNDE3MzE4NjcxMTQ5MA%3D%3D.2-ccb7-5&oh=00_AfAAebRhSbJam7fNsjUCKFA_6Qq81OFY1Fbp2wJdyLXvXQ&oe=644063C7&_nc_sid=1527a3',
+          thumbnail: 'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
         },
       }, {
         _id: 12,
@@ -41,7 +41,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
           link: 'https://instagram.com/943_snap?igshid=YmMyMTA2M2Y=',
           name: '943스냅',
           price: '0.00',
-          thumbnail: 'https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/341139704_730615408806590_5394512627668967682_n.jpg?stp=dst-jpg_e35_p1080x1080&_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=maajJoQTJYwAX9w5D_z&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=MzA4MDYzNDE3MzE4NjcxMTQ5MA%3D%3D.2-ccb7-5&oh=00_AfAAebRhSbJam7fNsjUCKFA_6Qq81OFY1Fbp2wJdyLXvXQ&oe=644063C7&_nc_sid=1527a3',
+          thumbnail: 'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
         },
       }, {
         _id: 17,
@@ -50,7 +50,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
           link: 'https://instagram.com/943_snap?igshid=YmMyMTA2M2Y=',
           name: '943스냅',
           price: '0.00',
-          thumbnail: 'https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/341139704_730615408806590_5394512627668967682_n.jpg?stp=dst-jpg_e35_p1080x1080&_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=maajJoQTJYwAX9w5D_z&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=MzA4MDYzNDE3MzE4NjcxMTQ5MA%3D%3D.2-ccb7-5&oh=00_AfAAebRhSbJam7fNsjUCKFA_6Qq81OFY1Fbp2wJdyLXvXQ&oe=644063C7&_nc_sid=1527a3',
+          thumbnail: 'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
         },
       }, {
         _id: 18,
@@ -59,7 +59,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
           link: 'https://instagram.com/943_snap?igshid=YmMyMTA2M2Y=',
           name: '943스냅',
           price: '0.00',
-          thumbnail: 'https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/341139704_730615408806590_5394512627668967682_n.jpg?stp=dst-jpg_e35_p1080x1080&_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=maajJoQTJYwAX9w5D_z&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=MzA4MDYzNDE3MzE4NjcxMTQ5MA%3D%3D.2-ccb7-5&oh=00_AfAAebRhSbJam7fNsjUCKFA_6Qq81OFY1Fbp2wJdyLXvXQ&oe=644063C7&_nc_sid=1527a3',
+          thumbnail: 'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
         },
       }, {
         _id: 26,
@@ -68,7 +68,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
           link: 'https://instagram.com/943_snap?igshid=YmMyMTA2M2Y=',
           name: '943스냅',
           price: '0.00',
-          thumbnail: 'https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/341139704_730615408806590_5394512627668967682_n.jpg?stp=dst-jpg_e35_p1080x1080&_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=maajJoQTJYwAX9w5D_z&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=MzA4MDYzNDE3MzE4NjcxMTQ5MA%3D%3D.2-ccb7-5&oh=00_AfAAebRhSbJam7fNsjUCKFA_6Qq81OFY1Fbp2wJdyLXvXQ&oe=644063C7&_nc_sid=1527a3',
+          thumbnail: 'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
         },
       }, {
         _id: 27,
@@ -77,7 +77,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
           link: 'https://instagram.com/943_snap?igshid=YmMyMTA2M2Y=',
           name: '943스냅',
           price: '0.00',
-          thumbnail: 'https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/341139704_730615408806590_5394512627668967682_n.jpg?stp=dst-jpg_e35_p1080x1080&_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=maajJoQTJYwAX9w5D_z&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=MzA4MDYzNDE3MzE4NjcxMTQ5MA%3D%3D.2-ccb7-5&oh=00_AfAAebRhSbJam7fNsjUCKFA_6Qq81OFY1Fbp2wJdyLXvXQ&oe=644063C7&_nc_sid=1527a3',
+          thumbnail: 'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
         },
       }, {
         _id: 50,
@@ -86,7 +86,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
           link: 'https://instagram.com/943_snap?igshid=YmMyMTA2M2Y=',
           name: '943스냅',
           price: '0.00',
-          thumbnail: 'https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/341139704_730615408806590_5394512627668967682_n.jpg?stp=dst-jpg_e35_p1080x1080&_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=maajJoQTJYwAX9w5D_z&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=MzA4MDYzNDE3MzE4NjcxMTQ5MA%3D%3D.2-ccb7-5&oh=00_AfAAebRhSbJam7fNsjUCKFA_6Qq81OFY1Fbp2wJdyLXvXQ&oe=644063C7&_nc_sid=1527a3',
+          thumbnail: 'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
         },
       }, {
         _id: 62,
@@ -95,7 +95,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
           link: 'https://instagram.com/943_snap?igshid=YmMyMTA2M2Y=',
           name: '943스냅',
           price: '0.00',
-          thumbnail: 'https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/341139704_730615408806590_5394512627668967682_n.jpg?stp=dst-jpg_e35_p1080x1080&_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=maajJoQTJYwAX9w5D_z&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=MzA4MDYzNDE3MzE4NjcxMTQ5MA%3D%3D.2-ccb7-5&oh=00_AfAAebRhSbJam7fNsjUCKFA_6Qq81OFY1Fbp2wJdyLXvXQ&oe=644063C7&_nc_sid=1527a3',
+          thumbnail: 'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
         },
       }, {
         _id: 63,
@@ -104,7 +104,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
           link: 'https://instagram.com/943_snap?igshid=YmMyMTA2M2Y=',
           name: '943스냅',
           price: '0.00',
-          thumbnail: 'https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/341139704_730615408806590_5394512627668967682_n.jpg?stp=dst-jpg_e35_p1080x1080&_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=maajJoQTJYwAX9w5D_z&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=MzA4MDYzNDE3MzE4NjcxMTQ5MA%3D%3D.2-ccb7-5&oh=00_AfAAebRhSbJam7fNsjUCKFA_6Qq81OFY1Fbp2wJdyLXvXQ&oe=644063C7&_nc_sid=1527a3',
+          thumbnail: 'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
         },
       }, {
         _id: 71,
@@ -113,7 +113,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
           link: 'https://instagram.com/943_snap?igshid=YmMyMTA2M2Y=',
           name: '943스냅',
           price: '0.00',
-          thumbnail: 'https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/341139704_730615408806590_5394512627668967682_n.jpg?stp=dst-jpg_e35_p1080x1080&_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=maajJoQTJYwAX9w5D_z&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=MzA4MDYzNDE3MzE4NjcxMTQ5MA%3D%3D.2-ccb7-5&oh=00_AfAAebRhSbJam7fNsjUCKFA_6Qq81OFY1Fbp2wJdyLXvXQ&oe=644063C7&_nc_sid=1527a3',
+          thumbnail: 'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
         },
       }, {
         _id: 72,
@@ -122,7 +122,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
           link: 'https://instagram.com/943_snap?igshid=YmMyMTA2M2Y=',
           name: '943스냅',
           price: '0.00',
-          thumbnail: 'https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/341139704_730615408806590_5394512627668967682_n.jpg?stp=dst-jpg_e35_p1080x1080&_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=maajJoQTJYwAX9w5D_z&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=MzA4MDYzNDE3MzE4NjcxMTQ5MA%3D%3D.2-ccb7-5&oh=00_AfAAebRhSbJam7fNsjUCKFA_6Qq81OFY1Fbp2wJdyLXvXQ&oe=644063C7&_nc_sid=1527a3',
+          thumbnail: 'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
         },
       }, {
         _id: 77,
@@ -131,7 +131,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
           link: 'https://instagram.com/943_snap?igshid=YmMyMTA2M2Y=',
           name: '943스냅',
           price: '0.00',
-          thumbnail: 'https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/341139704_730615408806590_5394512627668967682_n.jpg?stp=dst-jpg_e35_p1080x1080&_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=maajJoQTJYwAX9w5D_z&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=MzA4MDYzNDE3MzE4NjcxMTQ5MA%3D%3D.2-ccb7-5&oh=00_AfAAebRhSbJam7fNsjUCKFA_6Qq81OFY1Fbp2wJdyLXvXQ&oe=644063C7&_nc_sid=1527a3',
+          thumbnail: 'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
         },
       }, {
         _id: 78,
@@ -140,7 +140,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
           link: 'https://instagram.com/943_snap?igshid=YmMyMTA2M2Y=',
           name: '943스냅',
           price: '0.00',
-          thumbnail: 'https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/341139704_730615408806590_5394512627668967682_n.jpg?stp=dst-jpg_e35_p1080x1080&_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=maajJoQTJYwAX9w5D_z&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=MzA4MDYzNDE3MzE4NjcxMTQ5MA%3D%3D.2-ccb7-5&oh=00_AfAAebRhSbJam7fNsjUCKFA_6Qq81OFY1Fbp2wJdyLXvXQ&oe=644063C7&_nc_sid=1527a3',
+          thumbnail: 'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
         },
       }, {
         _id: 80,
@@ -149,7 +149,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
           link: 'https://instagram.com/943_snap?igshid=YmMyMTA2M2Y=',
           name: '943스냅',
           price: '0.00',
-          thumbnail: 'https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/341139704_730615408806590_5394512627668967682_n.jpg?stp=dst-jpg_e35_p1080x1080&_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=maajJoQTJYwAX9w5D_z&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=MzA4MDYzNDE3MzE4NjcxMTQ5MA%3D%3D.2-ccb7-5&oh=00_AfAAebRhSbJam7fNsjUCKFA_6Qq81OFY1Fbp2wJdyLXvXQ&oe=644063C7&_nc_sid=1527a3',
+          thumbnail: 'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
         },
       }, {
         _id: 87,
@@ -158,7 +158,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
           link: 'https://instagram.com/943_snap?igshid=YmMyMTA2M2Y=',
           name: '943스냅',
           price: '0.00',
-          thumbnail: 'https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/341139704_730615408806590_5394512627668967682_n.jpg?stp=dst-jpg_e35_p1080x1080&_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=maajJoQTJYwAX9w5D_z&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=MzA4MDYzNDE3MzE4NjcxMTQ5MA%3D%3D.2-ccb7-5&oh=00_AfAAebRhSbJam7fNsjUCKFA_6Qq81OFY1Fbp2wJdyLXvXQ&oe=644063C7&_nc_sid=1527a3',
+          thumbnail: 'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
         },
       }, {
         _id: 97,
@@ -167,7 +167,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
           link: 'https://instagram.com/943_snap?igshid=YmMyMTA2M2Y=',
           name: '943스냅',
           price: '0.00',
-          thumbnail: 'https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/341139704_730615408806590_5394512627668967682_n.jpg?stp=dst-jpg_e35_p1080x1080&_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=maajJoQTJYwAX9w5D_z&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=MzA4MDYzNDE3MzE4NjcxMTQ5MA%3D%3D.2-ccb7-5&oh=00_AfAAebRhSbJam7fNsjUCKFA_6Qq81OFY1Fbp2wJdyLXvXQ&oe=644063C7&_nc_sid=1527a3',
+          thumbnail: 'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
         },
       }, {
         _id: 101,
@@ -176,7 +176,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
           link: 'https://instagram.com/943_snap?igshid=YmMyMTA2M2Y=',
           name: '943스냅',
           price: '0.00',
-          thumbnail: 'https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/341139704_730615408806590_5394512627668967682_n.jpg?stp=dst-jpg_e35_p1080x1080&_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=maajJoQTJYwAX9w5D_z&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=MzA4MDYzNDE3MzE4NjcxMTQ5MA%3D%3D.2-ccb7-5&oh=00_AfAAebRhSbJam7fNsjUCKFA_6Qq81OFY1Fbp2wJdyLXvXQ&oe=644063C7&_nc_sid=1527a3',
+          thumbnail: 'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
         },
       },
     ],
