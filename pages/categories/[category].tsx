@@ -42,13 +42,13 @@ export default function Category() {
 
     setState((prevState) => ({ ...prevState, currentCategory: categoryValue }));
 
-    fetchSitesByCategory(categoryValue).then((siteCategoryKeyword) => {
+    fetchSitesByCategory(categoryValue === 'hair-makeup' ? 'hair/makeup' : categoryValue).then((siteCategoryKeyword) => {
       setState((prevState) => ({ ...prevState, sites: siteCategoryKeyword }));
     });
   }, [category]);
 
   return (
-    <div className="m-auto max-w-7xl px-3">
+    <div className="mx-auto max-w-7xl px-3">
       <CategoriesList currentCategory={currentCategory} />
       <Sites sites={sites} />
     </div>
