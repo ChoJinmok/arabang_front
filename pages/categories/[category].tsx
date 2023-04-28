@@ -23,8 +23,8 @@ export default function Category() {
     const { siteCategoryKeyword } = await getSitesByCategory(categoryValue);
 
     return siteCategoryKeyword.map(({
+      _id: id,
       site: {
-        _id: id,
         link,
         name,
         price,
