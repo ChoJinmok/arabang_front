@@ -42,7 +42,7 @@ export default function Category() {
 
     setState((prevState) => ({ ...prevState, currentCategory: categoryValue }));
 
-    fetchSitesByCategory(categoryValue === 'hair-makeup' ? 'hair/makeup' : categoryValue).then((siteCategoryKeyword) => {
+    fetchSitesByCategory(categoryValue).then((siteCategoryKeyword) => {
       setState((prevState) => ({ ...prevState, sites: siteCategoryKeyword }));
     });
   }, [category]);
