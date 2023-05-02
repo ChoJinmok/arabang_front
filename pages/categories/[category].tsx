@@ -48,9 +48,9 @@ export default function Category() {
   }, [category]);
 
   return (
-    <div className="mx-auto max-w-7xl px-3">
+    <>
       <CategoriesList currentCategory={currentCategory} />
       <Sites sites={sites} />
-    </div>
+    </>
   );
 }

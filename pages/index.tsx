@@ -43,12 +43,12 @@ export default function Home() {
   }, [fetchSitesByKeyword]);
 
   return (
-    <div className="m-auto max-w-7xl px-3">
+    <>
       <CategoriesList />
       <video autoPlay loop muted className="aspect-video mt-5 w-full">
         <source src="https://player.vimeo.com/external/575736075.hd.mp4?s=3f22566c05f2204df03a5c8b01672db0c6b9fdfb&profile_id=172&oauth2_token_id=57447761" type="video/mp4" />
       </video>
       <SitesByKeyword sites={sitesByKeyword} />
-    </div>
+    </>
   );
 }

@@ -13,7 +13,7 @@ export default function Layout({
   return (
     <>
       <Header accessToken={accessToken} />
-      <main>
+      <main className="mx-auto max-w-7xl px-3">
         {children}
       </main>
     </>
