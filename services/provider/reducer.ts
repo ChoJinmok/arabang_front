@@ -2,7 +2,7 @@ import { useReducer } from 'react';
 
 import type { GlobalStateAction } from './actions';
 
-interface GlobalState {
+export interface GlobalState {
   pageHistory: string;
 }
 
@@ -20,14 +20,14 @@ function globalStateReducer(state: GlobalState, { type, payload }: GlobalStateAc
     },
 
     default() {
-      throw new Error('Unhandled action');
+      throw new Error(`Unhandled action type: ${type}`);
     },
   };
 
   return (index[type] || index.default)();
 }
 
-const initialGlobalState: GlobalState = {
+export const initialGlobalState: GlobalState = {
   pageHistory: '',
 };
 
